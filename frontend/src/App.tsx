@@ -1,11 +1,10 @@
-//import React from 'react'
-//import LandingPage from './pages/LandingPage'
-import LoginPage from './pages/LoginPage'
-//import RegisterPage from './pages/RegisterPage'
+
+import AppRoutes from './routes/AppRoutes'
+
 const App = () => {
   return (
     <div>
-      <LoginPage/>
+      <AppRoutes/>
     </div>
   )
 }
