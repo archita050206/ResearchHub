@@ -33,7 +33,7 @@ const Sidebar = () => {
         <ul className="">
           <p className="px-4 text-[14px] text-gray-800 text-sm pb-1">Main</p>
           <li>
-            <NavLink to="/dashboard" className={getNavLinkClass}>
+            <NavLink to="/dashboard" end className={getNavLinkClass}>
               <FaHome size={18} />
               <span className="text-[15px]">Dashboard</span>
             </NavLink>
@@ -50,7 +50,7 @@ const Sidebar = () => {
             <p className="px-4 text-[14px] text-gray-800 pt-5 text-sm pb-1">Library</p>
           <li>
             <NavLink to="/dashboard/favourites" className={getNavLinkClass}>
-              <FaRegHeart size={18} className="text-gray-700"/>
+              <FaRegHeart size={18} className=""/>
               <span className="text-[15px]">Favourites</span>
             </NavLink>
           </li>
@@ -59,28 +59,28 @@ const Sidebar = () => {
 
           <li>
             <NavLink to="/dashboard/collections" className={getNavLinkClass}>
-              <FaRegFolderOpen size={18} className="text-gray-700"/>
+              <FaRegFolderOpen size={18} className=""/>
               <span className="text-[15px]">Collections</span>
             </NavLink>
           </li>
 
           <li>
             <NavLink to="/dashboard/notes" className={getNavLinkClass}>
-              <FaRegNoteSticky size={18} className="text-gray-700"/>
+              <FaRegNoteSticky size={18} className=""/>
               <span className="text-[15px]">Notes</span>
             </NavLink>
           </li>
             <p className="px-4 text-[14px] text-gray-800 pt-5 text-sm pb-1">Analytics</p>
           <li>
             <NavLink to="/dashboard/history" className={getNavLinkClass}>
-              <MdHistory size={20} className="text-gray-700"/>
+              <MdHistory size={20} className=""/>
               <span className="text-[15px]">History</span>
             </NavLink>
           </li>
 
           <li>
             <NavLink to="/dashboard/statistics" className={getNavLinkClass}>
-              <SlGraph size={18} className="text-gray-700" />
+              <SlGraph size={18} className="" />
               <span className="text-[15px]">Statistics</span>
             </NavLink>
           </li>
