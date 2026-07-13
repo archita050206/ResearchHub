@@ -11,7 +11,7 @@ const SearchPapers = () => {
 
       <SearchHero />
 
-      <div className="mx-auto grid max-w-[85%] grid-cols-12 gap-15  py-6">
+      <div className="mx-auto grid max-w-[88%] grid-cols-12 gap-12  py-6">
 
         <div className="col-span-3">
 

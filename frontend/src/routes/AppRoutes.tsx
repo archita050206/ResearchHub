@@ -16,6 +16,7 @@ const AppRoutes = () => {
         <Route path='/register' element={<RegisterPage/>}></Route>
         <Route element={<DashboardLayout/>}>
         <Route path='/dashboard' element={<Dashboard/>}></Route>
+        
         </Route>
         <Route path='/dashboard/search' element={<SearchPapers/>}></Route>
       </Routes>

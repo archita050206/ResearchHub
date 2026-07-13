@@ -2,7 +2,7 @@ import { Search } from "lucide-react";
 
 const SearchHero = () => {
   return (
-    <section className="border-b border-gray-300 bg-blue-50 py-14">
+    <section className="border-b border-gray-300 bg-blue-100/60 py-14">
 
       <div className="mx-auto max-w-5xl text-center">
 

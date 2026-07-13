@@ -12,7 +12,8 @@ const ResultToolbar = ({
   onViewChange,
 }: ResultToolbarProps) => {
   return (
-    <div className="mb-4 flex items-center justify-between   ">
+    <div>
+    <div className="mb-2 flex items-center justify-between   ">
 
       {/* Left */}
 
@@ -53,6 +54,8 @@ const ResultToolbar = ({
         </button>
 
       </div>
+    </div>
+    <div className="w-full border mb-5 border-gray-300"></div>
     </div>
   );
 };

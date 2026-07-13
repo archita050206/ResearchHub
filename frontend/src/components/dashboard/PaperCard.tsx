@@ -1,9 +1,6 @@
-import {
-  Bookmark,
-  ExternalLink,
-  FileText,
-  Share2,
-} from "lucide-react";
+
+import { FaRegBookmark } from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa";
 
 interface PaperCardProps {
   title: string;
@@ -25,27 +22,30 @@ const PaperCard = ({
   tags,
 }: PaperCardProps) => {
   return (
-    <article className="rounded-2xl border bg-white p-6 shadow-sm transition hover:shadow-md">
+    
+    <div className="rounded-lg  items-center justify-evenly border border-gray-200 bg-white py-6 shadow-sm transition hover:shadow-md">
 
       {/* Header */}
+      <div className="flex">
+      <div className="w-4/5 px-7">
 
-      <div className="flex items-start justify-between gap-4">
+      <div className=" flex items-start justify-between gap-4">
 
         <div>
 
-          <h2 className="text-2xl font-semibold text-slate-900 hover:text-blue-600 cursor-pointer transition">
+          <h2 className="text-xl font-semibold text-slate-900 hover:text-blue-600 cursor-pointer transition">
 
             {title}
 
           </h2>
 
-          <p className="mt-2 text-sm text-slate-600">
+          <p className="mt-2 text-sm text-slate-500 font-semibold">
 
             {authors}
 
           </p>
 
-          <p className="mt-1 text-sm text-slate-500">
+          <p className="mt-1 text-sm text-slate-500 font-semibold">
 
             {journal} • {year}
 
@@ -53,17 +53,13 @@ const PaperCard = ({
 
         </div>
 
-        <button className="rounded-lg p-2 transition hover:bg-slate-100">
-
-          <Bookmark size={20} />
-
-        </button>
+        
 
       </div>
 
       {/* Abstract */}
 
-      <p className="mt-6 leading-7 text-slate-600">
+      <p className="mt-4 text-md leading-6 text-slate-600 ">
 
         {abstract}
 
@@ -86,45 +82,20 @@ const PaperCard = ({
 
       {/* Footer */}
 
-      <div className="mt-8 flex flex-col gap-4 border-t pt-5 lg:flex-row lg:items-center lg:justify-between">
-
-        <div className="text-sm text-slate-500">
+      <div className="text-sm text-slate-500 pt-5">
 
           ⭐ {citations.toLocaleString()} Citations
 
         </div>
-
-        <div className="flex flex-wrap gap-3">
-
-          <button className="flex items-center gap-2 rounded-lg border px-4 py-2 text-sm hover:bg-slate-50">
-
-            <FileText size={16} />
-
-            PDF
-
-          </button>
-
-          <button className="flex items-center gap-2 rounded-lg border px-4 py-2 text-sm hover:bg-slate-50">
-
-            <ExternalLink size={16} />
-
-            Source
-
-          </button>
-
-          <button className="flex items-center gap-2 rounded-lg border px-4 py-2 text-sm hover:bg-slate-50">
-
-            <Share2 size={16} />
-
-            Share
-
-          </button>
-
+      
         </div>
-
-      </div>
-
-    </article>
+        <div className="border-l-2  border-gray-300 w-1/5 flex flex-col gap-y-4 justify-center">
+          <button className="py-2 border border-gray-400 rounded-lg mx-5 bg-blue-600 text-white">View Details</button>
+          <button className="py-2 border border-gray-400 rounded-lg px-3 flex items-center justify-center mx-5"><FaRegBookmark size={20}/></button>
+          <button className="py-2 border border-gray-400 rounded-lg px-3 flex items-center justify-center mx-5"><FaRegHeart size={20}/></button>
+        </div>
+        </div>
+    </div>
   );
 };
 

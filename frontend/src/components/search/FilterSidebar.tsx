@@ -4,7 +4,7 @@ const FilterSidebar = () => {
 
       {/* Header */}
 
-      <div className="mb-5 flex items-center justify-between">
+      <div className="mb-4 flex items-center justify-between">
 
         <h2 className="text-lg font-semibold text-slate-800">
           Filters
@@ -27,7 +27,7 @@ const FilterSidebar = () => {
         <input
           type="text"
           placeholder="Dr. Jane Doe"
-          className="w-full rounded-lg border border-gray-400 px-4 py-2 outline-none transition focus:border-blue-600"
+          className="w-full rounded-lg border border-gray-400 px-4 py-1 outline-none transition focus:border-blue-600"
         />
 
       </div>
@@ -41,7 +41,7 @@ const FilterSidebar = () => {
         </label>
 
         <select
-          className="w-full rounded-lg border border-gray-400 px-4 py-2 outline-none transition focus:border-blue-600 text-slate-700"
+          className="w-full rounded-lg border border-gray-400 px-4 py-1 outline-none transition focus:border-blue-600 text-slate-700"
         >
           <option>All Topics</option>
           <option>Artificial Intelligence</option>
@@ -67,7 +67,7 @@ const FilterSidebar = () => {
           <input
             type="number"
             placeholder="Year"
-            className="w-full rounded-xl border border-gray-400 px-3 py-2 outline-none focus:border-blue-600"
+            className="w-full rounded-lg border border-gray-400 px-3 py-1 outline-none focus:border-blue-600"
           />
 
           
@@ -85,7 +85,7 @@ const FilterSidebar = () => {
         </label>
 
         <select
-          className="w-full rounded-lg border border-gray-400 px-4 py-2 text-slate-700 outline-none transition focus:border-blue-600"
+          className="w-full rounded-lg border border-gray-400 px-4 py-1 text-slate-700 outline-none transition focus:border-blue-600"
         >
           <option>Relevance</option>
           <option>Newest First</option>
@@ -117,7 +117,7 @@ const FilterSidebar = () => {
       {/* Apply Button */}
 
       <button
-        className="w-full rounded-xl bg-blue-600 py-3 font-semibold text-white transition hover:bg-blue-700"
+        className="w-full rounded-xl bg-blue-600 py-2 font-semibold text-white transition hover:bg-blue-700"
       >
         Apply Filters
       </button>
