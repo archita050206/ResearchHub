@@ -1,7 +1,7 @@
-import SearchHeader from "./SearchHeader";
-import SearchHero from "./SearchHero";
-import FilterSidebar from "./FilterSidebar";
-import SearchResults from "./SearchResults";
+import SearchHeader from "../components/search/SearchHeader";
+import SearchHero from "../components/search/SearchHero";
+import FilterSidebar from "../components/search/FilterSidebar";
+import SearchResults from "../components/search/SearchResults";
 
 const SearchPapers = () => {
   return (
@@ -11,7 +11,7 @@ const SearchPapers = () => {
 
       <SearchHero />
 
-      <div className="mx-auto grid max-w-7xl grid-cols-12 gap-8 px-6 py-8">
+      <div className="mx-auto grid max-w-[85%] grid-cols-12 gap-15  py-6">
 
         <div className="col-span-3">
 

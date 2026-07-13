@@ -5,7 +5,7 @@ import LoginPage from '../pages/LoginPage'
 import RegisterPage from '../pages/RegisterPage'
 import DashboardLayout from '../layout/DashboardLayout'
 import Dashboard from '../components/dashboard/Dashboard'
-import SearchPapers from '../components/search/SearchPapers'
+import SearchPapers from '../pages/SearchPapers'
 
 const AppRoutes = () => {
   return (

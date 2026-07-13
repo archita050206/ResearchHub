@@ -12,19 +12,17 @@ const ResultToolbar = ({
   onViewChange,
 }: ResultToolbarProps) => {
   return (
-    <div className="mb-6 flex items-center justify-between rounded-2xl border bg-white p-4 shadow-sm">
+    <div className="mb-4 flex items-center justify-between   ">
 
       {/* Left */}
 
       <div>
 
-        <h2 className="text-lg font-semibold text-slate-800">
-          Search Results
+        <h2 className="  text-slate-600">
+          Showing {totalResults.toLocaleString()} results for "Neural Networks"
         </h2>
 
-        <p className="mt-1 text-sm text-slate-500">
-          {totalResults.toLocaleString()} papers found
-        </p>
+        
 
       </div>
 

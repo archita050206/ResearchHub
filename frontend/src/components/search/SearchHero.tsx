@@ -2,7 +2,7 @@ import { Search } from "lucide-react";
 
 const SearchHero = () => {
   return (
-    <section className="border-b bg-blue-50 py-16">
+    <section className="border-b border-gray-300 bg-blue-50 py-14">
 
       <div className="mx-auto max-w-5xl text-center">
 
@@ -10,12 +10,12 @@ const SearchHero = () => {
           Find your next breakthrough.
         </h1>
 
-        <p className="mx-auto mb-10 max-w-2xl text-lg text-gray-600">
+        <p className="mx-auto mb-12 max-w-2xl text-lg text-gray-600">
           Access millions of peer-reviewed articles, datasets and
           research papers from institutions worldwide.
         </p>
 
-        <div className="flex rounded-2xl bg-white p-2 shadow">
+        <div className="flex rounded-2xl bg-white px-2 py-1 shadow w-4/5 mx-auto">
 
           <div className="flex flex-1 items-center gap-3 px-4">
 

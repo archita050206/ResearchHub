@@ -1,12 +1,12 @@
 const FilterSidebar = () => {
   return (
-    <aside className="sticky top-6 rounded-2xl border bg-white p-6 shadow-sm">
+    <aside className="sticky top-6 rounded-2xl   ">
 
       {/* Header */}
 
-      <div className="mb-8 flex items-center justify-between">
+      <div className="mb-5 flex items-center justify-between">
 
-        <h2 className="text-lg font-bold">
+        <h2 className="text-lg font-semibold text-slate-800">
           Filters
         </h2>
 
@@ -18,30 +18,30 @@ const FilterSidebar = () => {
 
       {/* Author */}
 
-      <div className="mb-6">
+      <div className="mb-4">
 
-        <label className="mb-2 block text-sm font-semibold">
+        <label className="mb-2 block text-sm font-semibold text-slate-700">
           Author
         </label>
 
         <input
           type="text"
           placeholder="Dr. Jane Doe"
-          className="w-full rounded-xl border px-4 py-3 outline-none transition focus:border-blue-600"
+          className="w-full rounded-lg border border-gray-400 px-4 py-2 outline-none transition focus:border-blue-600"
         />
 
       </div>
 
       {/* Topic */}
 
-      <div className="mb-6">
+      <div className="mb-4">
 
-        <label className="mb-2 block text-sm font-semibold">
+        <label className="mb-2 block text-sm font-semibold text-slate-700">
           Topic
         </label>
 
         <select
-          className="w-full rounded-xl border px-4 py-3 outline-none transition focus:border-blue-600"
+          className="w-full rounded-lg border border-gray-400 px-4 py-2 outline-none transition focus:border-blue-600 text-slate-700"
         >
           <option>All Topics</option>
           <option>Artificial Intelligence</option>
@@ -56,9 +56,9 @@ const FilterSidebar = () => {
 
       {/* Publication Year */}
 
-      <div className="mb-6">
+      <div className="mb-4">
 
-        <label className="mb-2 block text-sm font-semibold">
+        <label className="mb-2 block text-sm font-semibold text-slate-700">
           Publication Year
         </label>
 
@@ -66,15 +66,11 @@ const FilterSidebar = () => {
 
           <input
             type="number"
-            placeholder="From"
-            className="w-full rounded-xl border px-3 py-3 outline-none focus:border-blue-600"
+            placeholder="Year"
+            className="w-full rounded-xl border border-gray-400 px-3 py-2 outline-none focus:border-blue-600"
           />
 
-          <input
-            type="number"
-            placeholder="To"
-            className="w-full rounded-xl border px-3 py-3 outline-none focus:border-blue-600"
-          />
+          
 
         </div>
 
@@ -82,14 +78,14 @@ const FilterSidebar = () => {
 
       {/* Sort */}
 
-      <div className="mb-6">
+      <div className="mb-4">
 
-        <label className="mb-2 block text-sm font-semibold">
+        <label className="mb-2 block text-sm font-semibold text-slate-700">
           Sort By
         </label>
 
         <select
-          className="w-full rounded-xl border px-4 py-3 outline-none transition focus:border-blue-600"
+          className="w-full rounded-lg border border-gray-400 px-4 py-2 text-slate-700 outline-none transition focus:border-blue-600"
         >
           <option>Relevance</option>
           <option>Newest First</option>
@@ -111,7 +107,7 @@ const FilterSidebar = () => {
 
         <label
           htmlFor="peer"
-          className="text-sm"
+          className="text-sm text-slate-800"
         >
           Peer Reviewed Only
         </label>
