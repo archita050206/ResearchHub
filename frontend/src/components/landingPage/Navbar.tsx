@@ -1,4 +1,5 @@
 import { FaBookOpen } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -34,9 +35,9 @@ const Navbar = () => {
 
         <div className="flex gap-4">
 
-          <button className="px-4 py-2">
+          <NavLink to='/login' className="px-4 py-2">
             Login
-          </button>
+          </NavLink>
 
           <button className="rounded-lg bg-blue-600 px-6 py-2 text-white hover:bg-blue-700">
             Get Started

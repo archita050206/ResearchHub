@@ -6,6 +6,7 @@ import {
   FaLock,
   FaUser,
 } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 
 interface RegisterFormData {
@@ -70,7 +71,7 @@ const RegisterForm = () => {
   };
 
   return (
-    <div className=" w-full px-7  mb-8 mt-12">
+    <div className=" w-full px-7  mb-8 mt-14">
 
       {/* Heading */}
 
@@ -432,12 +433,12 @@ const RegisterForm = () => {
 
           Already have an account?
 
-          <button
+          <NavLink to='/login'
             type="button"
             className="ml-2 font-semibold text-blue-600 hover:underline"
           >
             Login
-          </button>
+          </NavLink>
 
         </p>
 

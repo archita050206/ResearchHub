@@ -8,6 +8,7 @@ import Dashboard from '../components/dashboard/Dashboard'
 import SearchPapers from '../pages/SearchPapers'
 import Favourites from '../components/favoutites/Favourites'
 import Collections from '../pages/Collections'
+import Notes from '../pages/Notes'
 
 const AppRoutes = () => {
   return (
@@ -20,6 +21,7 @@ const AppRoutes = () => {
         <Route path='/dashboard' element={<Dashboard/>}></Route>
         <Route path='/dashboard/favourites' element={<Favourites/>}></Route>
         <Route path='/dashboard/collections' element={<Collections/>}></Route>
+         <Route path='/dashboard/notes' element={<Notes/>}></Route>
         </Route>
         <Route path='/dashboard/search' element={<SearchPapers/>}></Route>
       </Routes>

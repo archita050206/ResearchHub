@@ -6,7 +6,8 @@ interface Props {
   papers: number;
   updated: string;
   colorClass:string;
-  iconBgColour:string
+  iconBgColour:string;
+  iconTextColours:string;
 }
 
 const CollectionCard = ({
@@ -15,7 +16,8 @@ const CollectionCard = ({
   papers,
   updated,
   colorClass,
-  iconBgColour
+  iconBgColour,
+  iconTextColours
 }: Props) => {
   return (
     <div className="overflow-hidden rounded-2xl border border-gray-400 bg-white  shadow-sm transition hover:shadow-lg">
@@ -25,19 +27,19 @@ const CollectionCard = ({
 
         <div className={`rounded-xl ${iconBgColour} p-3`}>
 
-          <FolderOpen className="text-blue-600" />
+          <FolderOpen className={`${iconTextColours}`} size={20}/>
 
         </div>
 
         <button>
 
-          <MoreVertical size={20} />
+          <MoreVertical size={20} className={`${iconTextColours}`}/>
 
         </button>
 
       </div>
 
-      <h3 className="mt-4 text-lg font-semibold">
+      <h3 className="mt-4 text-lg font-semibold text-slate-800">
         {title}
       </h3>
 
@@ -45,7 +47,7 @@ const CollectionCard = ({
         {description}
       </p>
 
-      <div className="mt-5 flex justify-between border-t pt-3 text-sm text-slate-500">
+      <div className="mt-5 flex justify-between border-t border-gray-400 pt-3 text-sm text-slate-500">
 
         <span>{papers} Papers</span>
 

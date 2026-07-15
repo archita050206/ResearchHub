@@ -42,11 +42,18 @@ const iconBgColours = [
   "bg-purple-200", 
   "bg-orange-200", 
   "bg-green-200", 
-  "bg-yellow-00"
+  "bg-yellow-200"
+];
+const iconTextColours = [
+  "text-blue-500", 
+  "text-purple-500", 
+  "text-orange-500", 
+  "text-green-500", 
+  "text-yellow-500"
 ];
 const CollectionGrid = () => {
   return (
-    <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+    <div className="grid gap-7 md:grid-cols-2 xl:grid-cols-4">
 
       {collections.map((collection, index) => (
         <CollectionCard
@@ -54,6 +61,7 @@ const CollectionGrid = () => {
           {...collection}
           colorClass={cardColors[index%cardColors.length]}
           iconBgColour={iconBgColours[index%cardColors.length]}
+          iconTextColours={iconTextColours[index%cardColors.length]}
         />
       ))}
 

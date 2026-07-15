@@ -6,6 +6,7 @@ import {
   FaEyeSlash,
 } from "react-icons/fa";
 import GoogleButton from "./GoogleButton";
+import { NavLink } from "react-router-dom";
 
 const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -161,11 +162,11 @@ const LoginForm = () => {
 
           Don't have an account?
 
-          <button
+          <NavLink to='/register'
             className="ml-2 font-semibold text-blue-600 hover:underline"
           >
             Sign Up
-          </button>
+          </NavLink>
 
         </p>
 
